@@ -1,0 +1,283 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+  font-family: 'Armata';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Armata'), local('Armata-Regular'), url(http://themes.googleusercontent.com/static/fonts/armata/v3/w27wif_q95nkRqADjVBFpg.woff) format('woff');
+}
+
+body,#header {
+    background-color: #cc4d4d;
+}
+
+#leftbar,#header,#maincontainer,#footerplayer {
+    position: fixed;
+	left: 0;
+}
+
+#leftbar,#header,#maincontainer {
+    top: 0;
+}
+
+#leftbar,#maincontainer,#footerplayer {
+    bottom: 0;
+}
+
+#header,#maincontainer,#footerplayer {
+    right: 0;
+}
+
+label {
+	color: #FFF;
+}
+
+#header,ul strong,.navbaritem,.itemholder,.ayahnumber,.ayahverseenglish,label {
+    font-family: 'Armata', sans-serif;
+}
+
+#header,.navbaritem {
+    text-transform: capitalize;
+}
+
+#ppbtn,#sliderbarholder,#volumebarholder,#volume,#downloadbtn,.itemholder {
+    float: left;
+}
+
+ul,#sliderbarholder,#volumebarholder,#volume,#downloadbtn {
+    margin-left: 30px;
+}
+
+#search,#ppbtn,#volume,#downloadbtn,.navbaritem,.itemholder {
+    background-repeat: no-repeat;
+}
+
+#search,#ppbtn,#volume,#downloadbtn {
+	border: none;
+}
+
+#ppbtn,#volume,#downloadbtn {
+    background-image: url(images/collectiveimages.png);
+    background-color: transparent;
+}
+
+#duration,#status,#tooltip,.itemnumber {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#duration,#tooltip {
+    font-size: 12px;
+}
+
+.itemholder,.navbaritem,.ayah {
+    cursor: pointer;
+}
+
+.itemholder:hover {
+    background-color: #d26161;
+}
+
+#status,.itemtext {
+    text-align: center;
+}
+
+#status,.itemnumber {
+    position: relative;
+}
+
+#leftbar {
+    width: 250px;
+    background-color: #000;
+}
+
+#maincontainer {
+    z-index: -2;
+    margin-top: 180px;
+    margin-bottom: 110px;
+    overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+#maincontainer::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+#maincontainer::-webkit-scrollbar-track {
+    background-color: rgba(113,112,107,0.1);
+}
+
+#maincontainer::-webkit-scrollbar-thumb:vertical {
+    background-color: rgba(0,0,0,.2);
+}
+
+#maincontainer::-webkit-scrollbar-thumb:vertical:hover {
+    background-color: #FEF6FB;
+}
+
+#header {
+    font-size: 42px;
+    padding-left: 300px;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    color: #e6eaea;
+    z-index: -1;
+}
+
+#contentcontainer {
+    margin-left: 260px;
+}
+
+#search {
+	height: 30px;
+	width: 166px;
+	padding-left: 34px;
+	margin-top: 10px;
+	margin-left: 20px;
+	background-image: url(images/search_icon.png);
+}
+
+.navbaritem {
+    padding-left: 48px;
+    font-size: 19px;
+    color: #F4F4F4;
+    text-align: left;
+    margin-top: 14px;
+    background-position: 15px center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+	background-image: url(images/icon.png);
+}
+
+ul strong {
+    margin-left: 10px;
+    color: #999;
+}
+
+ul {
+    margin-top: 40px;
+    list-style-type: none;
+}
+
+li:hover {
+    background-color: #333;
+}
+
+.itemholder {
+    margin: 10px;
+    width: 200px;
+    height: 120px;
+    background-image: url(images/headphones_icon.png);
+    background-size: auto auto;
+    background-position: center 15px;
+    padding-top: 120px;
+}
+
+.itemtext {
+    font-size: 24px;
+    color: #E6EAEA;
+}
+
+.itemnumber {
+	top: -110px;
+	left: 10px;
+	color: #FFF;
+}
+
+.ayah {
+	color: #FFF;
+	margin-right: 20px;
+	padding: 20px;
+	margin-bottom: 10px;
+	background-color: #d26161;
+}
+
+.ayahnumber {
+	font-size: 12px;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.ayahversearabic {
+	text-align: right;
+	font-size: 36px;
+	margin-bottom: 20px;
+	line-height: 90px;
+}
+
+.ayahverseenglish,label {
+	font-size: 18px;
+}
+
+#footerplayer {
+    height: 110px;
+    background-color: #ecf0f1;
+}
+
+#controls {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 740px;
+}
+
+#ppbtn {
+    width: 33px;
+    height: 34px;
+}
+
+#sliderbarholder {
+    margin-top: -9px;
+}
+
+#volumebarholder {
+    margin-top: 10px;
+}
+
+#volume {
+    width: 39px;
+    height: 42px;
+    margin-top: -5px;
+}
+
+#downloadbtn {
+    width: 30px;
+    height: 29px;
+}
+
+#duration {
+    margin-top: 7px;
+	float: right;
+}
+
+#status {
+    bottom: 30px;
+    font-size: 14px;
+    color: #cc4d4d;
+    height: 20px;
+}
+
+#buffered {
+    margin-top: -5px;
+}
+
+#settings {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.8);
+	z-index: -1;
+	margin-left: 250px;
+}
+#reciterlist, #translatorlist{
+	margin: 20px;
+	width: 400px;
+	height: 30px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QuranPlayrr</title>
+    <link href="main.min.css" rel="stylesheet" type="text/css">
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/jqueryscroll.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></></script>
+    <link href="css/custom-theme/jquery-ui-1.10.3.custom.min.css" rel="stylesheet">
+	<script src="main.min.js"></></script>
+</head>
+<body onload="pageload();">
+    <div id="leftbar">
+        <img height="170px" src="images/logo.png" width="250px">
+		<div id="buffered" style="height: 10px; width:250px; background-color: #FFF;"></div>
+		<input type="text" id="search" placeholder="Search" onkeyup="getSurahList(this.value)" />
+        <ul>
+			<strong>Explore</strong>
+            <li class="navbaritem surah">surah</li>
+			<li class="navbaritem viewer">viewer</li>
+			<li class="navbaritem settings">settings</li>
+        </ul>
+    </div>
+	<div id="header"></div>
+    <div id="maincontainer">
+        <div id="contentcontainer"></div>
+    </div>
+    <div id="footerplayer">
+        <div id="controls">
+            <button id="ppbtn" onclick="play()" style="background-position: -41px -4px;"></button>
+			<div id="sliderbarholder"><div id="status"></div><div id="sliderbar" style="height:10px;width:400px;"></div><div id="duration"></div></div>
+			<button id="volume" style="background-position: -94px 0px;"></button> 
+			<div id="volumebarholder"><div id="volumebar" style="height:10px;width:100px;"></div></div>
+			<audio id="player"><source id="surah" src="" type="audio/mpeg"></audio>
+        </div>
+    </div>
+	<a href="http://kiiolabs.com/" target="_blank" style="background-image: url(images/kiiologo.png);position: absolute;top: 20px;right: 10px;height: 64px;width: 124px;"></a>
+	<div id="settings">
+		<select id="reciterlist"><option>Select Reciter</option></select>
+		<select id="translatorlist"><option>Select Translation</option></select><br>
+		<label style="margin-left:20px;" for="RepeatAyah">Repeat Ayah:</label><input id="RepeatAyah" name="RepeatAyah" value="RepeatAyah" type="checkbox" style="margin-left: 5px;">
+		<label style="margin-left:20px;" for="RepeatSurah">Repeat Surah:</label><input id="RepeatSurah" name="RepeatSurah" value="RepeatSurah" type="checkbox" style="margin-left: 5px;">
+	</div>
+</body>
+</html>
